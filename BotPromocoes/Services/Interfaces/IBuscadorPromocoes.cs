@@ -5,7 +5,7 @@ using System.Text;
 
 namespace BotPromocoes.Services.Interfaces
 {
-    interface IBuscadorPromocoes
+    public interface IBuscadorPromocoes
     {
         public Task<List<Promocao>> BuscarPromocoes();
     }

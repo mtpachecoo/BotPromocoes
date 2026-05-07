@@ -5,7 +5,7 @@ using System.Text;
 
 namespace BotPromocoes.Services.Interfaces
 {
-    interface IPublicadorWhatsApp
+    public interface IPublicadorWhatsApp
     {   
         public Task PublicarGrupo(List<Promocao> promocoes);
 

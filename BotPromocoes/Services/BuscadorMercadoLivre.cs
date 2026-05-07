@@ -16,6 +16,8 @@ namespace BotPromocoes.Services
         }
         public async Task<List<Promocao>> BuscarPromocoes()
         {
+           // _client.DefaultRequestHeaders.UserAgent.ParseAdd("Mozilla/5.0 (compatible; BotPromocoes/1.0)");
+
             var json = await _client.GetStringAsync(
                 "https://api.mercadolibre.com/sites/MLB/search?q=smartphone&sort=price_asc&limit=10");
 
